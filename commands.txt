@@ -1,0 +1,14 @@
+dotnet tool install -g Microsoft.dotnet-httprepl
+httprepl {address}
+
+// inside the HttpRepl session
+
+ls 
+cd dir_name
+get
+get 1
+post -c "{"name":"Hawaii", "isGlutenFree":false}"
+put 3 -c "{"id":3, "name":"Hawaiian", "isGlutenFree":false}"
+delete 3
+
+exit
